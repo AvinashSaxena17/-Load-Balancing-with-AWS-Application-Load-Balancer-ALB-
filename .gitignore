@@ -1,0 +1,7 @@
+.terraform/
+.terraform.lock.hcl
+aws_ap_south_key
+aws_ap_south_key.pub
+
+
+
