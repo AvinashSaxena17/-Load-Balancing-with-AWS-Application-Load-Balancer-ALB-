@@ -44,6 +44,7 @@ resource "aws_instance" "ec2-instance" {
   subnet_id              = local.public_subnets[count.index]
   vpc_security_group_ids = [aws_security_group.sg_vpc_ap_south_1.id]
 
+user_data = file("script.sh")
 
   tags = {
     Name = "Ec2_public_subnet-${count.index+1}"
